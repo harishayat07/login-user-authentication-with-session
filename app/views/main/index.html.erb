@@ -1,0 +1,10 @@
+<%if @user%>
+<h1>Welcome</h1>
+Logged is as <%=@user.email%>
+<%= link_to 'Logout', '/logout'%>
+<%else%>
+<h2>
+    <%= link_to 'Signup', '/signup'%>
+    <%= link_to 'Login', '/login'%>
+</h2>
+<%end%>
